@@ -1,0 +1,39 @@
+pairs_gui instructions and documentation:
+
+// Creator : Leevi Hokkanen,
+// Studentnumber : 050253975
+// Username : tbleho
+// E-mail : leevi.hokkanen@tuni.fi
+
+
+//pairs_gui //
+A memory game, made using qt-ui. Can have a game with up 24 cards and up to 4 players.
+
+//How to use the program //
+When the program starts, you will be meeted with a screen with an option, for how many players will be playing the game. Pick the desired amount of players and click the menubar option: "Actions", and pick one of the five pre-defined sum of cards you want to play with.
+Picking another card game during a game or at the end of one, will start another game with the same players. 
+
+There are also more commands in the "Actions"-submenu. The option: "Scores" displays a message-box that displays all the cards that each player has, and how many wins they have acquired. Option: "Reset" returns the program back to the beginning state, deletes all players and their scores, and the card game that was previously played.
+
+There is also another submenu called: "Others". In it you have two commands: "Credits" and "Close". The command: "Credits" displays a message-box that displays the info on the creator. The option: "Close" closes the program.
+
+//Rules for the game //
+At the beginning of every game a set of cards are shuffled and placed randomly on a gameboard. During each player-turn, the player will turn around two cards. If the cards match, they will removed from the gameboard and the player gets a point and an another turn. If the cards don't match, the turn will move on to the next player.
+
+The player who manages to get most points during the game wins.
+
+//The design //
+The program makes different types of pre-defined random rectangle shaped button-layouts. Each of these layouts are defined using a loop. The program also creates a selected amount player-type variables, which can be used to store the scores of each player playing the game. The player-variables are also created with loop.
+
+The program defines two similarily marked buttons on each round of the loop. All of these buttons are placed in to same vector, after which a function: "Shuffle" is used on it This is done so that the buttons in the vector will be set in a random order. All of the buttons are then placed in to the layout.
+
+After every game the same vector is emptied, by deleting all of the buttons in it. After this, a new game is started by defining new buttons the same way as previously.
+
+//Extra features added //
++ The program can have varying amount of players. Up to four.
++ The program tells what cards each player has and how many.
++ The program displays runtime of thorought the entire single game.
++ The program can be reseted to the beginning state without restarting the whole program.
+
+
+
